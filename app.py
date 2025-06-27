@@ -16,7 +16,7 @@ if 'chat_complete' not in st.session_state:
   st.session_state['chat_complete'] = False
 if 'restart_requested' not in st.session_state:
   st.session_state['restart_requested'] = False
-  
+
 def complete():
   st.session_state['info_completion'] = True
 
@@ -40,7 +40,7 @@ if st.session_state.get('restart_requested',False):
   st.session_state['restart_requested'] = False
   st.rerun()
 
-st.title('Chat bot')
+st.title('Interview Bot 💬')
 if not st.session_state['info_completion']:
   st.subheader('Personal Information', divider='rainbow')
 

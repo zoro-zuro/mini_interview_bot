@@ -72,7 +72,7 @@ if not st.session_state['info_completion']:
     sorted(('Google', 'Microsoft', 'Amazon', 'Facebook','Nestle', 'Apple', 'Tesla', 'IBM', 'Intel', 'Oracle','accenture', 'Salesforce', 'SAP', 'Cisco', 'Adobe', 'Nvidia', 'Twitter', 'LinkedIn', 'Spotify', 'Zoom','zoho', 'Slack', 'Atlassian', 'Shopify', 'Square', 'Stripe', 'PayPal', 'eBay', 'Reddit', 'Snapchat','Pinterest', 'TikTok', 'ByteDance', 'Alibaba', 'Tencent', 'Baidu', 'Huawei', 'Xiaomi', 'JD.com','Zalando','Booking.com','Airbnb','Uber','Lyft','DoorDash','Postmates','Instacart','Robinhood','Coinbase')),
   )
 
-  st.write(f".Your name is {st.session_state['name']} and you have {st.session_state['experience']} experience with skills {st.session_state['skills']} plus you are  {st.session_state['level']} {st.session_state['position']} at {st.session_state['company']}.")
+  st.write(f"Your name is {st.session_state['name']} and you have {st.session_state['experience']} experience with skills {st.session_state['skills']} plus you want to be {st.session_state['level']} {st.session_state['position']} at {st.session_state['company']}.")
   if st.button('Start Interview',on_click=complete):
     st.write('Starting interview...')
 if st.session_state['info_completion'] and not st.session_state['chat_complete'] and not st.session_state['feedback_shown']:
